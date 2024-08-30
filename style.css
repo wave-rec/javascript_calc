@@ -1,0 +1,114 @@
+*{
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body {
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.calculator-container {
+  background-color: rgb(218, 218, 218);
+  width: 320px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 1px 1px 2px 1px #000000;
+}
+
+.display {
+  margin-bottom: 15px;
+  background-color: rgb(167, 167, 167);
+  width: 280px;
+  height: 100px;
+  border-radius: 20px;
+  gap: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 10px;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: rgb(57, 57, 57); 
+  box-shadow: 1px 1px 4px 1px #787878 inset;
+}
+
+.buttons {
+  margin-bottom: 25px;
+  background-color: rgb(218, 218, 218);
+  width: 280px;
+  height: 320px;
+  border-radius: 25px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+/* 도대체 왜 위에 버튼 4개만 크기가 미세하게 다른 것인가...*/
+
+.button {
+  flex: 0 0 calc(25% - 10px);
+  height: 60px;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 1px 1px 2px 1px #000000;
+  margin: 5px;
+  text-align: center;
+  
+}
+.zero {
+  flex: 0 0 calc(50% - 10px);
+  height: 60px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color:  rgb(125, 125, 125);
+}
+
+.button:active {
+  background-color: rgb(83, 83, 83);
+}
+
+.clear, .both ,.slash,.divide {
+  background-color: rgb(175, 209, 255);
+}
+
+
+.multiple {
+  background-color: #588c73;
+}
+
+.minus {
+  background-color: #f6d394;
+}
+
+.plus {
+  background-color: #eea36e;
+}
+
+.result {
+  background-color: #d96459;
+}
